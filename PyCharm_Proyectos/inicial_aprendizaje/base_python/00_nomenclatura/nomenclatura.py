@@ -18,4 +18,12 @@
     - Parametros de funciones: Letras en minuscula, nombres compuestos unidos por (_)
                 EJ: enviar(nombre_del_archivo), recibir(self)
 
+    Python, Lenguaje de Propósito General. 
+
+    PIP:  Manejador de Paquetes, Utilidad hecha en Python que ayuda a Descargar programas / Librerias hechos en Python, "Instalador de paquetes de Python"
+    PEP: ( Python Enhancement Proposal) es un documento de diseño que proporciona información, describe o propone una nueva característica para el lenguaje de programación Python.
+
+
+
+
 """

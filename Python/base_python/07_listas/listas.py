@@ -53,6 +53,7 @@ del catalogo
 # print(catalogo) ya eliminado
 print(deportes)
 del deportes[2]
+print(deportes)
 # Las Cadenas "Strings" son Inmutables por lo tanto no se puede borrar un Caracter de una cadena con Del.
 
 # insert
@@ -75,7 +76,7 @@ print(lista)
 # Exclusión de elementos
 lista = ["aaa", "bbb", "ccc", "ddd", "eee", "fff"]
 print(lista)
-del(lista[::2])
+del(lista[::2])  # iterable[inicio:fin:paso]
 print(lista)
 # Ordenado
 lista.reverse()

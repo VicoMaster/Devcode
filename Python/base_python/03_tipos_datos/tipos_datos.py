@@ -22,4 +22,3 @@ variable_numerica = 9.6
 print("El tipo de la Variable es: ", type(variable_numerica))
 variable_numerica = True
 print("El tipo de la Variable es: ", type(variable_numerica))
-

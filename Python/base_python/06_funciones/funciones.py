@@ -9,7 +9,6 @@ def retorno_mayuscula(palabra):
 palabrita = "mi palabrita".upper()
 print(retorno_mayuscula(palabrita))
 
-
 # Parametros DEFAULT
 def login(usuario="admin", contrasenna="admin123", edad=30, sexo=True):
     print("El usuario es: %s" % usuario)

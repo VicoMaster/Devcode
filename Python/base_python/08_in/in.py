@@ -14,7 +14,7 @@ lista_palabras = list(Palabras)
 if 'c' in lista_palabras:
     print("Su letra esta en la Lista")
 
-a, b, c = 10, 25, 66
+a, b, c = [10,12,5,1], 25, 66
 x = int(input("DIGITE UN NUMERO: "))
 
 try:

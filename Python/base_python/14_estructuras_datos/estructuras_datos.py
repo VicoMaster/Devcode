@@ -3,7 +3,7 @@
 Estructuras de Datos en Python:
 -Listas
 -Tuplas
--Conjuntos
+-Conjuntos (set)
 -Diccionarios
 -Rebanadas (Slices)
 """

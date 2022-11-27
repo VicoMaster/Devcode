@@ -32,9 +32,34 @@ OPERACIONES:
 # Recordaos reglas de Conjuntos "Matematica Basica".
 # Las reglas de Operaciones  de conjuntos permitiran tener una variedad de comprobaciones en la informacion obtenida.
 
-conjunto_a = set(input("DIGITE EL CONJUNTO 'A' SEPARADO POR ESPACIOS\nEj: 1 4 6 8\n-> ").split())
+conjunto_a = set(
+    input("DIGITE EL CONJUNTO 'A' SEPARADO POR ESPACIOS\nEj: 1 4 6 8\n-> ").split())
 print(conjunto_a)
 conjunto_b = set(input("DIGITE EL CONJUNTO 'B' -> ").split())
 print(conjunto_b)
 conjunto_union = conjunto_a.union(conjunto_b)
 print("Conjunto Unido: "+str(conjunto_union))
+
+
+estoEsSet = {'uno', 1, False}
+print(list(estoEsSet)[0])  # Se obtendra una salida siempre diferente
+for element in estoEsSet:
+    print(element)
+
+# Ejemplos de uniones
+set1 = set('Hello')
+set2 = set('World')
+print(f'Conjuntos unidos {set1.union(set2)}')
+set1.update(set2)
+print(set1)
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+#x.update(y)
+#print(x)
+#x.intersection_update(y)
+#print(x)
+#x.difference()
+x.symmetric_difference_update(y)
+print(x)
+

@@ -24,7 +24,7 @@ print(num)
 
 
 def func():
-    global num
+    global num  # Si no se declara esto, la variable num entra en scope local
     num = 50
     print(num)
 

@@ -24,7 +24,7 @@ login(usuario="Don Andres", contrasenna="VicMan", edad=24, sexo=False)
 
 """ 
 FUNCIONES VARIADICAS 
-*args = lista
+*args = lista/tupla ¿?
 **kwargs = diccionario <- argumentos nombrados "clave y valor "
 Argumentos posicionales y nominales
 Primero los posicionales luego los nominales como regla del lenguaje.

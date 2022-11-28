@@ -9,7 +9,7 @@ diccionario = {
     "Pedro": "Administrador(a)",
     "Nathaly": "Contador(a)",
     "Diego": "Abogado(a)"
-    }
+}
 print(diccionario)
 print(diccionario["Nathaly"])
 print(diccionario["Andres"])
@@ -34,13 +34,15 @@ lista_2 = ["Harina", "Gallo", "Leche"]
 diccionario_3 = (dict(zip(lista_1, lista_2)))
 print("Diccionario Unido de Listas:", diccionario_3)
 
-dias_semana = {"Lunes": 1, "Martes": 2, "Miercoles": 3, "Jueves": 4, "Viernes": 5, "Sabado": 6, "Domingo": 7}
+dias_semana = {"Lunes": 1, "Martes": 2, "Miercoles": 3,
+               "Jueves": 4, "Viernes": 5, "Sabado": 6, "Domingo": 7}
 print(dias_semana)
 del dias_semana["Domingo"]
 print(dias_semana)
 dias_semana.update({"Sabadito": 6, "Dominguito": 7})
 print(dias_semana)
-dias_semana["eliminar"] = dias_semana.pop("Sabado")  # Eliminar Clave especifica creando una nueva con el mismo valor
+# Eliminar Clave especifica creando una nueva con el mismo valor
+dias_semana["eliminar"] = dias_semana.pop("Sabado")
 """
 Lo anterior es para eliminar una clave agregando otra con su valor, las claves no necesitan ser modificadas,
 los diccionarios no guardan un orden en especifico, por lo tanto lo importante es guardar el dato [clave:valor] correcto
@@ -50,7 +52,8 @@ print(dias_semana)
 
 # Iterar, recorrer Diccionarios
 print("\nIteraciones en Diccionarios\n")
-colores_frutas = {"Manzana": "Roja", "Pera": "Verde", "Moras": "Morado", "Naranja": "Naranja"}
+colores_frutas = {"Manzana": "Roja", "Pera": "Verde",
+                  "Moras": "Morado", "Naranja": "Naranja"}
 for frutas in colores_frutas:  # Puede utilizarse el metodo .key para optener la key
     print("Las frutas son: ", frutas)
 
@@ -64,7 +67,8 @@ for tuplas in colores_frutas.items():
 print("Creando Diccionarios por Comprension")
 # Sintaxis: dict(<clave>, <valor> for <elemento> in <iterable>)
 nuevo_dict = dict((x, x * x) for x in (1, 2, 3, 4))
-print(nuevo_dict)  # Se crea un Diccionario donde las claves son los iterables y los valores son sus cuadrados
+# Se crea un Diccionario donde las claves son los iterables y los valores son sus cuadrados
+print(nuevo_dict)
 
 # Creando un Diccionario a partir de Listas con Bucle For
 # Se crean usando Listas de Tuplas
@@ -76,8 +80,7 @@ for k, v in lista:  # Por cada elemento dentro de la tupla una letra sera asigna
     print("Esto es V:", v)
 
 # Las llaves pueden ser cualquier tipo de datos NO iterable
-"""
-fromkeys()
+# fromkeys()
 dic = dict.fromkeys(['a','b','c','d'],1)
-dic →  {‘a’ : 1, ’b’ : 1, ‘c’ : 1 , ‘d’ : 1}
-"""
+print(dic)
+# dic →  {‘a’ : 1, ’b’ : 1, ‘c’ : 1 , ‘d’ : 1}

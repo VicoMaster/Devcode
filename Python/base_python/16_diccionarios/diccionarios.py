@@ -1,8 +1,10 @@
 # coding: utf-8
 # Diccionarios
+
 """
 A los Diccionarios no les importa el orden
 """
+
 diccionario = {
     "Andres": "Desarrollador(a)",
     "Nestor": "Diseñador(a)",
@@ -81,6 +83,13 @@ for k, v in lista:  # Por cada elemento dentro de la tupla una letra sera asigna
 
 # Las llaves pueden ser cualquier tipo de datos NO iterable
 # fromkeys()
-dic = dict.fromkeys(['a','b','c','d'],1)
+dic = dict.fromkeys(['a', 'b', 'c', 'd'], 1)
 print(dic)
 # dic →  {‘a’ : 1, ’b’ : 1, ‘c’ : 1 , ‘d’ : 1}
+
+
+# Creacion de dict por comprehension
+from random import randint as rdi
+countries = ['Col','Mex','Per','Arg','Bol']
+population = {country:rdi(1, 100) for country in countries}
+print(population)

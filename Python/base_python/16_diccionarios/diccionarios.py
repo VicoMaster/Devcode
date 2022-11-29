@@ -93,3 +93,11 @@ from random import randint as rdi
 countries = ['Col','Mex','Per','Arg','Bol']
 population = {country:rdi(1, 100) for country in countries}
 print(population)
+
+# segunda forma
+names = {'Andres', 'Felipe', 'Maria', 'Loreto'}
+ages = {'28', '27', '25', '26'}
+new_dict = {name: age for (name, age) in zip(names,ages) if name == 'Maria'}  # Con Condicional
+print(new_dict)
+# Tercera forma
+print(dict(zip(names,ages)))

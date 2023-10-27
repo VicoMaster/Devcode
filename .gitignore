@@ -9,3 +9,5 @@
 /.vscode/*
 /.vscode/
 /.vscode
+/Python/_env_test/*
+/Python/_env_test
